@@ -1,75 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Wheather App</title>
 </head>
 <body>
-    
-    
-       
-       
     <div class="card" >
         <from>
             <input type="text" placeholder="Type a city..."/>
             <button type="button" class="btn btn-primary">Search</button>
         </form>
-        <h1 class="title">Paris</h1>
-        <h5 class="card-title">Wednesday</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Partly Cloudy</h6>
-        <p class="card-text">🌤️ 19°C</p>
-        <h6 class="information">
-            Humidity: 80%
-            Wind: 3km/h
-            Precipitation:0%
-        </h6>
+        <h1 class="title">Sydney NSW, Australia</h1>
+        <ul>
+            <li>Wednesday</li>
+            <li>Partly Cloudy</li>
+        </ul>
+        <div class="row">
+            <div class="col-6">
+                <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                    alt="Cloudy icon"
+                    class="weather-icon float-left"
+                />
+                <div class="float-left">
+                    <span class="temperature">19</span>
+                    <span class="units">°C | <a href="#">°F</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <ul>
+                <li>
+                    Precipitation: 0%
+                </li>
+                <li>
+                    Humidity: 77%
+                </li>
+                <li>
+                    Wind: 8km/h
+                </li>
+            </ul>
+        </div>
+    </div>
        
         
-    </div>
+    
     
    
-    <script>
-
-        let weather = {
-            "paris": {
-            temp: 19.7,
-            humidity: 80,
-            wind:3,
-            preci: 0
-            },
-
-            "tokyo": {
-            temp: 17.3,
-            humidity: 50,
-            wind:3,
-            preci: 0
-            },
-
-            "lisbon": {
-            temp: 30.2,
-            humidity: 20,
-            wind:3,
-            preci: 0
-            },
-
-            "san francisco": {
-            temp: 20.9,
-            humidity: 100,
-            wind:3,
-            preci: 0 
-            },
-
-            "moscow": {
-            temp: -5,
-            humidity: 20,
-            wind:3,
-            preci: 0 
-            }
-        };
-  
-    </script>
+   
+    <script src="src/index.js"></script>
 </body>
 </html>
