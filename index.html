@@ -16,11 +16,13 @@
 <body>
     <div class="card" >
         <from>
-            <input type="text" placeholder="Type a city..."/>
-            <button type="button" class="btn btn-primary">Search</button>
+            <div class="search">
+                <input type="text" placeholder="Type a city..."/>
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
         </form>
         <h1 class="title">Sydney NSW, Australia</h1>
-        <ul>
+        <ul class="week">
             <li>Wednesday</li>
             <li>Partly Cloudy</li>
         </ul>
@@ -29,26 +31,26 @@
                 <img
                     src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                     alt="Cloudy icon"
-                    class="weather-icon float-left"
+                    class="icon float-left"
                 />
-                <div class="float-left">
+                <div class="left">
                     <span class="temperature">19</span>
                     <span class="units">°C | <a href="#">°F</a></span>
                 </div>
             </div>
-        </div>
-        <div class="col-6">
-            <ul>
-                <li>
-                    Precipitation: 0%
-                </li>
-                <li>
-                    Humidity: 77%
-                </li>
-                <li>
-                    Wind: 8km/h
-                </li>
-            </ul>
+            <div class="col-6">
+                <ul class="atmosphere">
+                    <li>
+                        Precipitation: 0%
+                    </li>
+                    <li>
+                        Humidity: 77%
+                    </li>
+                    <li>
+                        Wind: 8km/h
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
        
