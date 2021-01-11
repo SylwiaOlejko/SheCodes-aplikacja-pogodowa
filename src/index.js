@@ -37,4 +37,5 @@ let weather = {
           alert(
             `Sorry we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`
           );
+          
         }
